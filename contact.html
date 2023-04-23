@@ -1,0 +1,104 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Van Duc Tri
+  ID: s3978223
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>RMIT Bookstore</title>
+</head>
+<body>
+    <header class="topnav">
+        <div style="display: inline-block">
+        <img src="img/RMIT_LOGO.png" alt="RMIT_logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><h1>HOME</h1></a></li>
+                <li><a href="category.html"><h1>COMICS</h1></a></li>
+                <li><a href="category2.html"><h1>NOVELS</h1></a></li>
+                <li><a href="contact.html"><h1>CONTACT US</h1></a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+            <li><a href="index.html"><h1>HOME</h1></a></li>
+            <li><a href="category.html"><h1>COMICS</h1></a></li>
+            <li><a href="category2.html"><H1>NOVELS</H1></a></li>
+            <li><a href="contact.html"><h1>CONTACT US</h1></a></li>
+            </ul>
+            </div>
+     </header>
+     <form class="contact">
+        <h1 style="text-align: center">CONTACT US</h1>
+        <div id="contactform">
+        <label for="contact_purpose">
+            Contact purpose :
+        </label>
+        <Select name="contact purpose" id="contactpurpose">
+            <option value="buy">I want to buy books</option>
+            <option value="sell">I want to sell books</option>
+        </Select>
+        <label for="name" id="name">
+            Name:
+        </label>
+        <input type="text" required>
+        <label for="email">
+            Email:
+        </label>
+        <input type="email" name="email" id="email" required>    
+        <label for="phone">
+            Phone number:
+        </label>
+        <input type="tel" name="phone" id="phone" required>
+        <label for="contactpreference">
+            Contact Preference:
+        </label>
+        <div class="contactpreference">
+        <input type="checkbox" name="contactemail" id="contactemail">
+        <label for="By email">By email</label>
+        <input type="checkbox" name="contactphone" id="contactphone">
+        <label for="By phone">By phone</label>
+        </div>
+        <div class="newsletter">
+            <label for="News Letter Report">
+                Do you want to recieve news letter report from us ?:
+            </label>
+            <input type="radio" name="recievenewsletter" id="newsletter1" value="Yes">
+            <label for="accept">Yes</label>
+            <input type="radio" name="recievenewsletter" id="newsletter2" value="No">
+            <label for="deny">No</label>
+            <br>
+            <label for="extranote">
+                Extra note:
+            </label>
+            <input type="text" name="extranote" id="extranote">
+            <br>
+            <input type="submit" id="submit">
+        </div>
+
+     </form>
+     <footer>
+        <nav>
+            <ul>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">PRIVACY AND POLICY</a></li>
+                <li><a href="">TERMS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="">COPYRIGHT</a></li>
+            </ul>
+        </nav>
+     </footer>
+</body>
+</html>

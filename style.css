@@ -1,0 +1,166 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Van Duc Tri
+  ID: s3978223
+  */
+  html,body
+  {
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+      background-color: burlywood ; 
+  }
+.topnav, footer {
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(45, 45, 147);
+    font-family: "museo","helvetica neue lt pro";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+.topnav img {
+    width: 300px;
+}
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    }
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+    }
+.open .bar2 {
+    opacity: 0;
+    }
+.open .bar3 {
+    -webkit-transform: rotate (45deg) translate(-6px, -8px);
+    transform: rotate (45deg) translate(-6px, -8px);
+    }
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    }
+.mobile-menu {
+    display: none;
+    position:absolute;
+    background-color: rgb(45, 45, 147);
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+@media only screen and (max-width: 960px) {
+     .topnav nav {
+        display: none;
+     }
+     #hamburger-icon {
+        display: block;
+     }
+     .category{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        flex-basis: auto;
+     }
+     .category img {
+        height: 100px;
+        width: 63px;
+     }
+     footer {
+        font-size: xx-small;
+     }
+    
+}
+.category {
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+.category img {
+    height: 400px;
+    width: 250px;
+    padding-right: 20px;
+}
+.category a {
+    text-decoration: none;
+    color: black;
+}
+#contactform {
+    display: flex;
+    justify-content:center;
+    flex-flow: column;
+    text-align: start;
+    width: auto;
+    font-size: larger;
+    background-color:bisque;
+}
+footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.contactpreference {
+    display: flexbox;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:center;
+}
+select {
+    width: fit-content;
+}
+input[type=text], input[type=email], input[type=tel] {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+#submit {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.category a:visited {
+    color: black;
+}

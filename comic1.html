@@ -1,0 +1,86 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Van Duc Tri
+  ID: s3978223
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detail.css">
+    <title>RMIT Bookstore</title>
+</head>
+<body>
+  <header class="topnav">
+    <div style="display: inline-block">
+    <img src="img/RMIT_LOGO.png" alt="RMIT_logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><h1>HOME</h1></a></li>
+            <li><a href="category.html"><h1>COMICS</h1></a></li>
+            <li><a href="category2.html"><h1>NOVELS</h1></a></li>
+            <li><a href="contact.html"><h1>CONTACT US</h1></a></li>
+        </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+        <li><a href="index.html"><h1>HOME</h1></a></li>
+        <li><a href="category.html"><h1>COMICS</h1></a></li>
+        <li><a href="category2.html"><H1>NOVELS</H1></a></li>
+        <li><a href="contact.html"><h1>CONTACT US</h1></a></li>
+        </ul>
+        </div>
+ </header>
+ <ul class="breadcrumb">
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="category.html">COMICS</a></li>
+  <li>The Flash:Control</li>
+</ul>
+ <div class="book_detail">
+  <div class="bookpics">
+    <script>
+const change = src => {
+  document.getElementById('main').src = src
+}
+    </script>
+    <div class="main_view">
+    <img src="img/category1-1.jpg" alt="mainpict" id="main">
+    </div>
+    <div class="side_view">
+    <img src="img/category1-1.jpg" alt="maincover" onclick="change(this.src)">
+    <img src="img/comic1-2.jpg" alt="covervariant" onclick="change(this.src)">
+    <img src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:600/h:923/q:75/https://bleedingcool.com/wp-content/uploads/2022/05/The-Flash-782-3.jpg" alt="preview1" onclick="change(this.src)">
+    <img src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:600/h:923/q:75/https://bleedingcool.com/wp-content/uploads/2022/05/The-Flash-782-4-min.jpg" alt="preview2" onclick="change(this.src)">
+    <img src="https://comic-watch.com/wp-content/uploads/2022/05/Flash-782-Preview-page-007-scaled.jpg" alt="preview3" onclick="change(this.src)">
+    <img src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:600/h:923/q:75/https://bleedingcool.com/wp-content/uploads/2022/05/The-Flash-782-7-min.jpg" alt="preview4" onclick="change(this.src)">
+  </div>
+  </div>
+  <div class="book_description">
+    <h1 style="text-align: center;">The Flash #782: Control</h1>
+    <Label for="price">Price :</Label> <span>23$</span>
+    <h2 style="text-align: center;">Description</h2>
+    <p>The Speed Force on lockdown! Some of the Rogues are plotting something big inside Iron Heights, and the Flash goes inside to root out the plot. Meanwhile, Wallace figures out his future, and Linda tries to find out if she really has powers…</p>
+    <input type="button" value="Add to cart">
+  </div>
+  </div>
+ <footer>
+  <nav>
+      <ul>
+          <li><a href="">ABOUT US</a></li>
+          <li><a href="">PRIVACY AND POLICY</a></li>
+          <li><a href="">TERMS</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="">COPYRIGHT</a></li>
+      </ul>
+  </nav>
+</footer>
+</body>
+</html>

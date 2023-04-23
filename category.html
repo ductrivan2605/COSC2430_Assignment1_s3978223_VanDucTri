@@ -1,0 +1,91 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Van Duc Tri
+  ID: s3978223
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="books.css">
+    <title>RMIT Bookstore</title>
+</head>
+<body>
+  <header class="topnav">
+    <div style="display: inline-block">
+    <img src="img/RMIT_LOGO.png" alt="RMIT_logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><h1>HOME</h1></a></li>
+            <li><a href="category.html"><h1>COMICS</h1></a></li>
+            <li><a href="category2.html"><h1>NOVELS</h1></a></li>
+            <li><a href="contact.html"><h1>CONTACT US</h1></a></li>
+        </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+        <li><a href="index.html"><h1>HOME</h1></a></li>
+        <li><a href="category.html"><h1>COMICS</h1></a></li>
+        <li><a href="category2.html"><H1>NOVELS</H1></a></li>
+        <li><a href="contact.html"><h1>CONTACT US</h1></a></li>
+        </ul>
+        </div>
+ </header>
+ <h1 style="color:red; text-align: center">Fantasy</h1>
+ <div class="subcategory" name="subcategory1">
+  <a href="comic1.html">
+    <img src="img/category1-1.jpg" alt="theflashcomic">
+    <p>The Flash:Control</p>
+    <p>23$</p>
+</a>
+<a href="comic2.html">
+    <img src="img/category1-2.jpg" alt="theflashcomic2">
+    <p>The Flash: The Fastest Man Alive</p>
+    <p>20$</p>
+</a>
+<a href="comic3.html">
+    <img src="img/category1-3.jpg" alt="theflashcomic3">
+    <p>The Flash Vol. 1: Move Forward (The New 52)</p>
+    <p>20$</p>
+</a>
+ </div>
+ <h1 style="color:red; text-align: center">Science Fiction</h1>
+ <div class="subcategory" name="subcategory2">
+  <a href="fiction1.html">
+    <img src="https://hips.hearstapps.com/pop.h-cdn.co/assets/17/31/768x1212/no1.jpg?resize=980:*" alt="scificomic">
+    <p>Fear Agent(Omnibus Edition)</p>
+    <p>37$</p>
+</a>
+<a href="fiction2.html">
+    <img src="https://hips.hearstapps.com/pop.h-cdn.co/assets/17/31/480x739/no2.jpg?resize=980:*" alt="scificomic2">
+    <p>Strange Science Fantasy</p>
+    <p>17$</p>
+</a>
+<a href="fiction3.html">
+    <img src="https://hips.hearstapps.com/pop.h-cdn.co/assets/17/31/480x638/no6.png?resize=980:*" alt="scificomic3">
+    <p>Valérian and Laureline
+    </p>
+    <p>20$</p>
+</a>
+ </div>
+ <footer>
+  <nav>
+      <ul>
+          <li><a href="">ABOUT US</a></li>
+          <li><a href="">PRIVACY AND POLICY</a></li>
+          <li><a href="">TERMS</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="">COPYRIGHT</a></li>
+      </ul>
+  </nav>
+</footer>
+</body>
+</html>

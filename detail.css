@@ -1,0 +1,207 @@
+html,body
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: burlywood ; 
+}
+header, footer {
+    padding: 10px 10px 10px;
+    background-color: rgb(45, 45, 147);
+    font-family: "museo","helvetica neue lt pro";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+header img {
+    width: 300px;
+}
+header a {
+    text-decoration: none;
+    color:blanchedalmond;
+}
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+ul a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+footer {
+    position:relative;
+    left: 0;
+    bottom: 0;
+}
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+    }
+.open .bar2 {
+    opacity: 0;
+    }
+.open .bar3 {
+    -webkit-transform: rotate (45deg) translate(-6px, -8px);
+    transform: rotate (45deg) translate(-6px, -8px);
+    }
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    }
+.mobile-menu {
+    display: none;
+    position:absolute;
+    background-color: rgb(45, 45, 147);
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+@media only screen and (max-width: 960px) {
+    .topnav nav {
+        display: none;
+     }
+    #hamburger-icon {
+        display: block;
+    }
+    footer {
+        font-size: xx-small;
+    }   
+    .main_view {
+        padding-left: 10px;
+        width: 31rem;
+        height: 50rem;
+    }
+      
+    .main_view img {
+        width: 31rem;
+        height: 50rem;
+        object-fit: cover;
+    }
+      
+    .side_view {
+        display: flex inline;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+      
+    .side_view img {
+        width: 9rem;
+        height: 7rem;
+        object-fit: cover;
+        cursor: pointer;
+        margin: 0.5rem;
+    }
+}
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+.book_detail {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+.bookpics {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.book_description {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+.main_view {
+    padding-left: 10px;
+    width: 31rem;
+    height: 50rem;
+}
+  
+.main_view img {
+    width: 31rem;
+    height: 50rem;
+    object-fit: cover;
+}
+  
+.side_view {
+    display: flex inline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+.side_view img {
+    width: 9rem;
+    height: 7rem;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+input[type=button] {
+    background-color: #ffa153;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+div input[type=button] {
+    display: flex;
+    justify-content: center;
+}
