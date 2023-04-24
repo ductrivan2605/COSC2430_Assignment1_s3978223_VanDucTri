@@ -81,28 +81,6 @@ ul li:hover {
     height: calc(100vh - 50px);
     width: 100%;
 }
-@media only screen and (max-width: 960px) {
-     .topnav nav {
-        display: none;
-     }
-     #hamburger-icon {
-        display: block;
-     }
-     .category{
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        flex-basis: auto;
-     }
-     .category img {
-        height: 100px;
-        width: 63px;
-     }
-     footer {
-        font-size: xx-small;
-     }
-
-}
 .category {
     text-align: center;
     background-color: aliceblue;
@@ -163,4 +141,35 @@ input[type=text], input[type=email], input[type=tel] {
 }
 .category a:visited {
     color: black;
+}
+#bookanalysis {
+    display: flex;
+    justify-content: space-between ;
+}
+@media only screen and (max-width: 960px) {
+    .topnav nav {
+       display: none;
+    }
+    #hamburger-icon {
+       display: block;
+    }
+    .category{
+       display: flex;
+       flex-wrap: nowrap;
+       overflow-x: scroll;
+       flex-basis: auto;
+    }
+    .category img {
+       height: 200px;
+       width: 125px;
+       padding-right: 10px;
+    }
+    footer {
+       font-size: xx-small;
+    }
+    #bookanalysis {
+        display: flexbox;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }

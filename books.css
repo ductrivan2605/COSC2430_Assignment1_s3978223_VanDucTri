@@ -23,6 +23,7 @@
 }
 .topnav img {
     width: 300px;
+    position: relative;
 }
 ul {
     list-style: none;
@@ -81,28 +82,6 @@ ul li:hover {
     height: calc(100vh - 50px);
     width: 100%;
 }
-@media only screen and (max-width: 960px) {
-     .topnav nav {
-        display: none;
-     }
-     #hamburger-icon {
-        display: block;
-     }
-     .subcategory{
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        flex-basis: auto;
-     }
-     .subcategory img {
-        height: 100px;
-        width: 63px;
-     }
-     footer {
-        font-size: xx-small;
-     }
-    
-}
 .subcategory {
     width: 100vw;
     text-align: center;
@@ -134,4 +113,27 @@ input[type=button] {
   text-decoration: none;
   font-size: 16px;
 }
-
+@media only screen and (max-width: 960px) {
+    .topnav nav {
+       display: none;
+    }
+    #hamburger-icon {
+       display: block;
+    }
+    .subcategory{
+       display: flex;
+       flex-wrap: nowrap;
+       overflow-x: scroll;
+       flex-basis: auto;
+    }
+    .subcategory img {
+       height: 200px;
+       width: 125px;
+       padding-right: 10px ;
+    }
+    footer {
+       font-size: xx-small;
+       justify-content: center;
+    }
+   
+}

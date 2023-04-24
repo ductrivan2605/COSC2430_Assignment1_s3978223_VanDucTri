@@ -199,6 +199,9 @@ input[type=button] {
         height: 6rem;
         object-fit: cover;
         cursor: pointer;
-        margin: 0.2rem;
+        margin: 0.1rem;
+    }
+    #incompatible {
+        display: none;
     }
 }
