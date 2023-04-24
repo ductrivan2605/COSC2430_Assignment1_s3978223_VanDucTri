@@ -101,6 +101,7 @@ ul li:hover {
      footer {
         font-size: xx-small;
      }
+
 }
 .category {
     text-align: center;
@@ -130,7 +131,7 @@ ul li:hover {
     background-color:bisque;
 }
 footer {
-  position:fixed;
+  position:relative;
   left: 0;
   bottom: 0;
   width: 100%;
