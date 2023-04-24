@@ -1,12 +1,19 @@
-html,body
-{
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    background-color: burlywood ; 
-}
-header, footer {
-    padding: 10px 10px 10px;
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Van Duc Tri
+  ID: s3978223
+  */
+  html,body
+  {
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+      background-color: burlywood ; 
+  }
+.topnav, footer {
+    padding: 10px 10px 10px 10px;
     background-color: rgb(45, 45, 147);
     font-family: "museo","helvetica neue lt pro";
     display: flex;
@@ -14,12 +21,8 @@ header, footer {
     align-items: center;
     width: 100vw;
 }
-header img {
+.topnav img {
     width: 300px;
-}
-header a {
-    text-decoration: none;
-    color:blanchedalmond;
 }
 ul {
     list-style: none;
@@ -27,7 +30,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-right: 10px;
 }
 ul a {
     color: antiquewhite;
@@ -40,12 +42,7 @@ ul li {
 ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
-}
-footer {
-    position:relative;
-    left: 0;
-    bottom: 0;
-}
+    }
 #hamburger-icon {
     margin: auto 0;
     display: none;
@@ -83,42 +80,6 @@ footer {
     left: 0;
     height: calc(100vh - 50px);
     width: 100%;
-}
-@media only screen and (max-width: 960px) {
-    .topnav nav {
-        display: none;
-     }
-    #hamburger-icon {
-        display: block;
-    }
-    footer {
-        font-size: xx-small;
-    }   
-    .main_view {
-        padding-left: 10px;
-        width: 31rem;
-        height: 50rem;
-    }
-      
-    .main_view img {
-        width: 31rem;
-        height: 50rem;
-        object-fit: cover;
-    }
-      
-    .side_view {
-        display: flex inline;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-      
-    .side_view img {
-        width: 9rem;
-        height: 7rem;
-        object-fit: cover;
-        cursor: pointer;
-        margin: 0.5rem;
-    }
 }
 /* Style the list */
 ul.breadcrumb {
@@ -202,7 +163,42 @@ input[type=button] {
   text-decoration: none;
   font-size: 16px;
 }
-div input[type=button] {
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 960px) {
+    .topnav nav {
+        display: none;
+     }
+    #hamburger-icon {
+        display: block;
+     }
+    footer {
+        font-size: xx-small;
+     }
+    .book_detail {
+        overflow-y: scroll;
+        display: block;
+    }
+     .main_view {
+        padding-left: 10px;
+        width: 248px;
+        height: 400px;
+    }
+      
+    .main_view img {
+        width: 248px;
+        height: 400px;
+    }
+      
+    .side_view {
+        display: flex inline;
+        justify-content: center;
+        flex-flow: row nowrap;
+    }
+      
+    .side_view img {
+        width: 8rem;
+        height: 6rem;
+        object-fit: cover;
+        cursor: pointer;
+        margin: 0.2rem;
+    }
 }

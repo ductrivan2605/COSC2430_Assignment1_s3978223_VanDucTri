@@ -1,15 +1,19 @@
-/*
-Both category and book detail's CSS
-*/
-html,body
-{
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    background-color: burlywood ; 
-}
-header, footer {
-    padding: 10px 10px 10px;
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Van Duc Tri
+  ID: s3978223
+  */
+  html,body
+  {
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+      background-color: burlywood ; 
+  }
+.topnav, footer {
+    padding: 10px 10px 10px 10px;
     background-color: rgb(45, 45, 147);
     font-family: "museo","helvetica neue lt pro";
     display: flex;
@@ -17,12 +21,8 @@ header, footer {
     align-items: center;
     width: 100vw;
 }
-header img {
+.topnav img {
     width: 300px;
-}
-header a {
-    text-decoration: none;
-    color:blanchedalmond;
 }
 ul {
     list-style: none;
@@ -30,7 +30,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-right: 10px;
 }
 ul a {
     color: antiquewhite;
@@ -43,13 +42,8 @@ ul li {
 ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
-}
-footer {
-    position:relative;
-    left: 0;
-    bottom: 0;
-  }
-  #hamburger-icon {
+    }
+#hamburger-icon {
     margin: auto 0;
     display: none;
     cursor: pointer;
@@ -88,25 +82,26 @@ footer {
     width: 100%;
 }
 @media only screen and (max-width: 960px) {
-    .topnav nav {
+     .topnav nav {
         display: none;
      }
-    #hamburger-icon {
+     #hamburger-icon {
         display: block;
-    }
-    .subcategory{
+     }
+     .subcategory{
         display: flex;
         flex-wrap: nowrap;
         overflow-x: scroll;
         flex-basis: auto;
-    }
-    .subcategory img {
+     }
+     .subcategory img {
         height: 100px;
         width: 63px;
-    }
-    footer {
-       font-size: xx-small;
-    }    
+     }
+     footer {
+        font-size: xx-small;
+     }
+    
 }
 .subcategory {
     width: 100vw;
